@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:gravity="center_horizontal|bottom"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/meituan_header_img"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在加载中"
+            android:textSize="12sp"
+            android:textColor="@color/gray_text1"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginTop="5dp"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最后更新时间：2017—08-02 02:18:48"
+            android:textColor="@color/gray_text1"/>
+
+    </LinearLayout>
+</LinearLayout>

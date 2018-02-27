@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:background="@color/bg_color"
+              android:orientation="vertical">
+
+
+
+
+    <FrameLayout
+        android:id="@+id/fl_body"
+        android:layout_width="match_parent"
+        android:background="@color/bg_color"
+      android:gravity="center"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+
+
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/line"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/line"
+        android:gravity="center"
+        android:text="2017"
+        android:textColor="#AAAAAA"
+        android:textSize="@dimen/font_normal2"/>
+    </FrameLayout>
+
+
+
+    <com.example.xy.dentist.tool.MyListView
+        android:layout_below="@id/fl_body"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:dividerHeight="1dp"
+        android:divider="@color/bg_color"
+        android:listSelector="@color/transparent"
+        android:id="@+id/lv"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        ></com.example.xy.dentist.tool.MyListView>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <CheckBox
+        android:id="@+id/tv_exam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/tag_select"
+        android:button="@null"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="你好"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+</LinearLayout>

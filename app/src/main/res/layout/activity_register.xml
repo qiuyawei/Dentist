@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xy.dentist.ui.login.LoginActivity">
+
+    <com.jaydenxiao.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/input_nomal_style"
+        android:hint="@string/input_phone"
+        android:inputType="phone"
+        android:maxLength="11"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/input_nomal_style"
+            android:layout_width="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:hint="@string/input_code"
+            />
+
+        <TextView
+            android:id="@+id/tv_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@mipmap/get_code"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_passw"
+        style="@style/input_nomal_style"
+        android:hint="@string/input_pass"
+        android:inputType="textPassword"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/check"/>
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:text="我已阅读并同意"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/font_small"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_xiy"
+            android:layout_width="wrap_content"
+            android:textColor="#6734CC"
+            android:padding="10dp"
+            android:textSize="@dimen/font_small"
+            android:text="《用户服务协议》"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/gray_color"
+        android:textSize="@dimen/font_small"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:text="注册后，您的QQ账号和牙医联盟账号都可以登录"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+
+        style="@style/input_btn_style"
+        android:layout_marginTop="80dp"
+        android:text="@string/sure_register"/>
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/gologin"
+        android:textColor="#5F2AC9"
+        android:textSize="@dimen/font_small"/>
+
+
+</LinearLayout>

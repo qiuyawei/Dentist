@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="预约时间：08:30~08:50"
+            android:textColor="@color/gray_c"
+            android:textSize="@dimen/font_small"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_color"/>
+
+        <include
+            layout="@layout/item_physician"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@color/bg_color"/>
+
+    <LinearLayout
+        android:id="@+id/ll_rap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@mipmap/combinedshape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginTop="10dp"
+                android:text="满意度"
+                android:textColor="@color/deep_c"
+                android:textSize="@dimen/font_small"/>
+
+
+            <com.example.xy.dentist.widget.StarBarView
+                android:id="@+id/starBar_recoveryratess"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+
+
+                android:layout_marginTop="10dp"
+                android:minHeight="12dp"
+                ratingbar:starCount="5"
+                ratingbar:starDistance="10dp"
+                ratingbar:starEmpty="@mipmap/zf_12"
+
+                ratingbar:starFill="@mipmap/zf_10"
+                ratingbar:starSize="14dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="医生很专业，服务很好，下次还来"
+            android:textColor="@color/deep_c"
+            android:textSize="@dimen/font_small"/>
+
+
+    </LinearLayout>
+</LinearLayout>

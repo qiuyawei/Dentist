@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/tvText_cancel"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/font_normal2"
+            android:textColor="@color/desc_defau"
+            android:text="取消"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/font_normal2"
+            android:textColor="@color/white"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tvText_confirm"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/font_normal2"
+            android:textColor="@color/filter"
+            android:text="确定"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+    <com.example.xy.dentist.widget.city.CityPicker
+        android:id="@+id/cpCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

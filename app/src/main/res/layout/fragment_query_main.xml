@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/bg_color"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="com.example.xy.dentist.ui.patientside.fragment.QueryMainFragment">
+
+    <com.jaydenxiao.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="默认排序"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/filter"
+
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/gray_color"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="地区筛选"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/desc_defau"
+
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.aspsine.irecyclerview.IRecyclerView
+            android:id="@+id/irc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:loadMoreEnabled="true"
+            app:refreshEnabled="true"
+
+            app:refreshHeaderLayout="@layout/layout_irecyclerview_refresh_header"
+            />
+
+        <com.jaydenxiao.common.commonwidget.LoadingTip
+            android:id="@+id/loadedTip"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

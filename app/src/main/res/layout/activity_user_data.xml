@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context="com.example.xy.dentist.ui.login.LoginActivity">
+
+    <com.jaydenxiao.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/>
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:hint="请输入姓名"
+        android:textColor="@color/deep_gray"
+        android:gravity="top"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:textColorHint="#B4B4B4"
+        android:textSize="@dimen/font_normal"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_exsice"
+
+        style="@style/input_btn_style"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_margin="0dp"
+        android:text="@string/sure"/>
+
+
+</LinearLayout>

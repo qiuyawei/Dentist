@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.xy.dentist.ui.login.LoginActivity">
+
+    <com.jaydenxiao.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/detail_doc"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_person"
+            android:layout_width="80dp"
+            android:layout_marginTop="-40dp"
+            android:src="@mipmap/bna"
+            android:layout_gravity="center"
+
+            android:layout_height="80dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="胡景升"
+        android:textColor="@color/deep_c"
+        android:drawablePadding="10dp"
+        android:textSize="@dimen/font_normal"
+        android:layout_marginBottom="10dp"
+        android:drawableBottom="@mipmap/busy"
+        android:layout_height="wrap_content"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_margin="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+                android:text="@string/clinic_introduce"
+                android:textColor="@color/deep_c"
+                android:textSize="@dimen/font_normal"/>
+
+            <TextView
+                android:id="@+id/tv_indro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_bg"
+                android:textColor="@color/gray_c"
+                android:textSize="@dimen/font_small"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="10dp"
+
+                android:text="她在诊所做了个膝盖手术。《柯林斯高阶英汉双解学习词典》  3我在诊所有个预约。I have an appointment at the doctors. 《柯林斯高阶英汉双解学习词典》"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/main_pro"
+                android:textColor="@color/deep_c"
+                android:textSize="@dimen/font_normal"/>
+
+            <TextView
+                android:id="@+id/tv_prod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_bg"
+                android:textColor="@color/gray_c"
+                android:textSize="@dimen/font_small"
+                android:lineSpacingExtra="3dp"
+                android:padding="10dp"
+                android:layout_marginBottom="80dp"
+
+                android:text="the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典the doctors. 《柯林斯高阶英汉双解学习词典"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/bg_color"
+                android:layout_weight="1"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/tv_login"
+
+            style="@style/input_btn_style"
+            android:layout_margin="0dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/line_appo"/>
+    </FrameLayout>
+
+
+
+</LinearLayout>

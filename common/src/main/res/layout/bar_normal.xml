@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/common_title"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+    <!-- 公共的的标题栏 -->
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/home_minex"
+            android:gravity="center"
+            android:padding="10dp"
+
+
+            android:textColor="@color/white"
+            android:visibility="visible"/>
+
+
+        <TextView
+            android:id="@+id/tv_titl"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="首页"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/image_right"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingRight="10dp"
+                android:src="@drawable/home_messagex"
+                android:visibility="visible"
+                />
+            <ImageView
+                android:id="@+id/red_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape_red_dot"
+                android:layout_alignRight="@+id/image_right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="3dp"
+                android:visibility="invisible"
+                />
+            <!--<ImageView
+                android:id="@+id/image_right"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingRight="10dp"
+                android:src="@drawable/home_messagex"
+                />-->
+            <TextView
+                android:layout_toRightOf="@id/image_right"
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+
+                android:gravity="center"
+               android:paddingRight="10dp"
+                android:text="取消行程"
+                android:textColor="#D2D2D2"
+                android:textSize="15sp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

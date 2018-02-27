@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_root"
+
+    android:orientation="vertical"
+    tools:context="com.example.xy.dentist.ui.patientside.activity.query.QueryDetailActivity">
+
+    <com.jaydenxiao.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.example.xy.dentist.tool.CusConvenientBanner
+                    android:id="@+id/convenientBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:canLoop="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="啄木鸟光固化机LED-B"
+                        android:textColor="#616161"
+
+
+                        android:textSize="@dimen/font_normal"/>
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="￥ 288"
+                        android:textColor="#FF5858"
+
+                        android:textSize="@dimen/font_normal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_number"
+                            style="@style/tv_shop_style"
+                            android:text="商家货号：71201053"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_brands"
+                            style="@style/tv_shop_style"
+                            android:text="品牌：啄木鸟"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_inde"
+                        style="@style/tv_shop_style"
+                        android:layout_width="wrap_content"
+                        android:text="注册证号：桂食药监械（准）字2012第2550093号"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_specification"
+                            style="@style/tv_shop_style"
+                            android:text="规格：1台/盒"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_unit"
+                            style="@style/tv_shop_style"
+                            android:text="包装单位：盒"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+
+                            />
+                        <TextView
+                            android:id="@+id/tv_standard"
+                            style="@style/tv_shop_style"
+                            android:text="产品标准：医械"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_class"
+                            style="@style/tv_shop_style"
+                            android:text="类别：三类"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_no"
+                            style="@style/tv_shop_style"
+                            android:text="医械类号：6855"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+
+                            />
+                        <TextView
+                            android:id="@+id/tv_Product"
+                            style="@style/tv_shop_style"
+                            android:text="品名：光固化机"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/line"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/line"
+                        android:gravity="center"
+                        android:text="图文详情"
+                        android:textColor="#AAAAAA"
+                        android:textSize="@dimen/font_normal2"/>
+                <WebView
+                    android:layout_width="match_parent"
+                    android:id="@+id/web_view"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp"
+                    ></WebView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_exsice"
+            style="@style/input_btn_style"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_margin="0dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/tell"
+            android:textColor="@color/white"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</LinearLayout>

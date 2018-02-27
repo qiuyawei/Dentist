@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@android:id/background"
+
+        android:drawable="@mipmap/zf_12" />
+
+    <itema
+        android:id="@android:id/secondaryProgress"
+
+        android:drawable="@mipmap/zf_12" />
+
+    <item
+        android:id="@android:id/progress"
+
+        android:drawable="@mipmap/zf_10" />
+
+</layer-list>
+

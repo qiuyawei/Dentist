@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xy.dentist.ui.patientside.activity.query.QueryDetailActivity">
+
+    <com.jaydenxiao.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+w
+                <com.example.xy.dentist.tool.CusConvenientBanner
+                    android:id="@+id/convenientBanner"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="340dp"
+                    app:canLoop="true"/>
+                <FrameLayout
+                    android:layout_gravity="bottom|right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_margin="10dp"
+
+
+                    android:padding="5dp"
+                    android:background="@drawable/oval_white"
+                    android:text="5张"
+                    android:textColor="@color/filter"/>
+                </FrameLayout>
+            </FrameLayout>
+
+            <include layout="@layout/query_detail2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="诊所介绍"
+                android:textColor="@color/deep_c"
+                android:textSize="@dimen/font_normal"/>
+
+            <TextView
+                android:id="@+id/tv_indro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_bg"
+                android:textColor="@color/gray_c"
+                android:textSize="@dimen/font_small"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="10dp"
+
+                android:text="她在诊所做了个膝盖手术。《柯林斯高阶英汉双解学习词典》  3我在诊所有个预约。I have an appointment at the doctors. 《柯林斯高阶英汉双解学习词典》"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="主营项目"
+                android:textColor="@color/deep_c"
+                android:textSize="@dimen/font_normal"/>
+
+            <TextView
+                android:id="@+id/tv_prod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_bg"
+                android:textColor="@color/gray_c"
+                android:textSize="@dimen/font_small"
+                android:lineSpacingExtra="3dp"
+                android:padding="10dp"
+
+                android:text="the doctors. 《柯林斯高阶英汉双解学习词典"/>
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="著名医师"
+                android:padding="10dp"
+                android:background="#EEEEEE"
+                android:textSize="@dimen/font_normal"
+                android:layout_height="wrap_content"/>
+
+            <com.example.xy.dentist.tool.MyListView
+                android:layout_margin="10dp"
+                android:dividerHeight="1dp"
+                android:divider="#F9F9F9"
+                android:id="@+id/lv_doc"
+                android:listSelector="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.xy.dentist.tool.MyListView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

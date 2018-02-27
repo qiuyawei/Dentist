@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4C10C4</color>
+    <color name="colorPrimaryDark">#4C10C4</color>
+    <color name="colorAccent">#F5F5F5</color>
+    <color name="bg_color">#F5F5F5</color>
+    <color name="deep_gray">#373737</color>
+    <color name="phone_color">#287BDE</color>
+    <color name="input_color">#A5A5A5</color>
+    <color name="gray_color">#B4B4B4</color>
+    <color name="desc_defau">#3D3D3D</color>
+    <color name="filter">#602BCA</color>
+    <color name="deep_c">#4A4A4A</color>
+    <color name="gray_c">#A4A4A4</color>
+    <color name="special_color">#6734CC</color>
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+    <color name="gree">#107FFE</color>
+</resources>
