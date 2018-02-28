@@ -199,18 +199,14 @@ public class SettingActivity extends BaseActivity {
 //        com.example.xy.dentist.utils.LogUtils.print("Patinuser_id", user_id);
 //        com.example.xy.dentist.utils.LogUtils.print("Pati_token", GlobalParams.getuser_token());
 
-        if (isdoc) {
-            alisa = "doctor_" + "";
-        } else {
-            alisa = "user_" + "";
-        }
+        alisa="";
         //设置过了不再设置
 
         JPushInterface.setAlias(mContext, alisa, new TagAliasCallback() {
             @Override
             public void gotResult(int i, String s, Set<String> set) {
                 if (i == 0) {
-                    com.example.xy.dentist.utils.LogUtils.print("Settt别名", "设置成功！");
+                    com.example.xy.dentist.utils.LogUtils.print("Settt别名", "设置成功！+别名="+"");
 //                    SharedPreferencesUtil.saveBooleanData(mContext, "ifHasSetAlisa", true);
                 }
                 LogUtils.print("i=set=",i+"");
